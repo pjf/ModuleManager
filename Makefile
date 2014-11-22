@@ -24,8 +24,10 @@ info:
 
 build: info
 	mkdir -p build
-	${GMCS} -t:library -lib:${KSPDIR}/${MANAGED} \
+	resgen2 -usesourcepath Properties/Resources.resx Resources.resources
+	${GMCS} -optimize+ -t:library -lib:${KSPDIR}/${MANAGED} \
 		-r:Assembly-CSharp,Assembly-CSharp-firstpass,UnityEngine \
+		-resource:Resources.resources,ModuleManager.Properties.Resources.resources \
 		-out:build/ModuleManager.dll \
 		${INCLUDEFILES}
 
