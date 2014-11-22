@@ -1,6 +1,6 @@
 # Makefile for building ModuleManager
 
-KSPDIR  := ${HOME}/.local/share/Steam/SteamApps/common/Kerbal\ Space\ Program
+KSPDIR  := ${HOME}/Steam/SteamApps/common/Kerbal\ Space\ Program
 MANAGED := KSP_Data/Managed/
 
 INCLUDEFILES := $(wildcard *.cs) \

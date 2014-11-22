@@ -180,8 +180,8 @@ namespace ModuleManager
                     offsetY += sizeOfError.y;
                 }
 
-
-                if (IsWin64())
+                // NYAN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                if (true)
                 {
                     GUI.color = Color.white;
                     int scale = 1;
